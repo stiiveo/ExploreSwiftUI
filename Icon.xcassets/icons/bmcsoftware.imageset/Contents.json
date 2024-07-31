@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "bmcsoftware.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

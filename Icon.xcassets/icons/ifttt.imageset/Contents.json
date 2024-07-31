@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ifttt.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

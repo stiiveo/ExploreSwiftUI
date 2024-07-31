@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "adobepremierepro.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

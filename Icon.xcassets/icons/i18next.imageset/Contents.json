@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "i18next.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

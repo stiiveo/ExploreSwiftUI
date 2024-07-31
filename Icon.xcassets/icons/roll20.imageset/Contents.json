@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "roll20.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

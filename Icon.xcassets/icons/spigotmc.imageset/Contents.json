@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "spigotmc.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ziggo.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

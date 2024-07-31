@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "neteasecloudmusic.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

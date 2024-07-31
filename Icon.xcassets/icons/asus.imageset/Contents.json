@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "asus.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vespa.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

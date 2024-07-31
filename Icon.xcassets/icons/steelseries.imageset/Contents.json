@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "steelseries.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

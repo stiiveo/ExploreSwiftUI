@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tensorflow.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

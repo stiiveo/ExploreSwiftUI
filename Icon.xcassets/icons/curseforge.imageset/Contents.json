@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "curseforge.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

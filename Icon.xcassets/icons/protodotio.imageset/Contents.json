@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "protodotio.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

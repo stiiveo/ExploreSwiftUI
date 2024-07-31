@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "youtubetv.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

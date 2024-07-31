@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "humblebundle.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

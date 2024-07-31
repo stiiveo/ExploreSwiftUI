@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "clevercloud.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

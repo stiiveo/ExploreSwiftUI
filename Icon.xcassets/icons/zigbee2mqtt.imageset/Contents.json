@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "zigbee2mqtt.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

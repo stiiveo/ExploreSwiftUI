@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nextui.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

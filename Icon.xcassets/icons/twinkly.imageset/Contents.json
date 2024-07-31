@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "twinkly.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

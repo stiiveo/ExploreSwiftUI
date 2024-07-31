@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "starz.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

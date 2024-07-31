@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pluscodes.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

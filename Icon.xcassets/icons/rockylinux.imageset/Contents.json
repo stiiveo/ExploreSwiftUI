@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "rockylinux.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

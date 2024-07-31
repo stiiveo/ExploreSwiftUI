@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "radixui.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

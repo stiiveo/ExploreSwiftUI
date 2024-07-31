@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "k3s.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

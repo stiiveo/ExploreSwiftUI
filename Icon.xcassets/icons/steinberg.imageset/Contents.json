@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "steinberg.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

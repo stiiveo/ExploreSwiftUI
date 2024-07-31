@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "web3dotjs.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

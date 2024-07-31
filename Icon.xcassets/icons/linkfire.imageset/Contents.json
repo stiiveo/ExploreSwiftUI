@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "linkfire.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

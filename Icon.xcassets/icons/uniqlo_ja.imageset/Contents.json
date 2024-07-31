@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "uniqlo_ja.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

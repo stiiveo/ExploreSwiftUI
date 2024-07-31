@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "snort.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

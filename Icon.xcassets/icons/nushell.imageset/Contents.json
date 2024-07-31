@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nushell.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

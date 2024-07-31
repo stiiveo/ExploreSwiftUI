@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "paytm.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

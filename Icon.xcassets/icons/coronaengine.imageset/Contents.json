@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "coronaengine.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

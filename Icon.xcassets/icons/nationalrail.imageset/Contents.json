@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nationalrail.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

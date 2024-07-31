@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "crewunited.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

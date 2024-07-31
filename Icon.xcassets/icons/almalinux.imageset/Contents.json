@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "almalinux.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

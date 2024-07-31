@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "reactos.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

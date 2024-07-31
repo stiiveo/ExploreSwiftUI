@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "betfair.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

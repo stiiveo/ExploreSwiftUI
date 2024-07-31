@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "awsamplify.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

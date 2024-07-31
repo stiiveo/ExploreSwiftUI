@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "aidungeon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

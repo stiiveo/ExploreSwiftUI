@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "koa.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

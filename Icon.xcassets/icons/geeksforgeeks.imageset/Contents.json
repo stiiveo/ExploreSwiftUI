@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "geeksforgeeks.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

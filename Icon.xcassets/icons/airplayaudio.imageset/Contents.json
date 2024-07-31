@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "airplayaudio.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

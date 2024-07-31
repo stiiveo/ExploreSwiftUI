@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vivino.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "organicmaps.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

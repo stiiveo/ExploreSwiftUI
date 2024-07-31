@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "cocoapods.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

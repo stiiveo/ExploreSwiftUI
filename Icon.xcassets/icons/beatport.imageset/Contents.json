@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "beatport.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

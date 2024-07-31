@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "yamahacorporation.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

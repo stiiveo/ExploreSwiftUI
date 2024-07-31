@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "prezi.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

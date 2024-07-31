@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "runkeeper.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

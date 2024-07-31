@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "youtubekids.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

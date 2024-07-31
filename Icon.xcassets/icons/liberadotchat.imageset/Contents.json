@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "liberadotchat.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

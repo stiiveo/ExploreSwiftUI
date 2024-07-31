@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pegasusairlines.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

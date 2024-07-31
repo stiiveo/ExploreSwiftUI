@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "foursquare.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

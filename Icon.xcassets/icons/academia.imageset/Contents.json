@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "academia.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

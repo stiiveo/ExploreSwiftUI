@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "trillertv.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

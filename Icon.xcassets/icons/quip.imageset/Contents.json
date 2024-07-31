@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "quip.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

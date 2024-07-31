@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "katacoda.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
