@@ -46,4 +46,3 @@ extension Image {
                              title: "Google",
                              onTapClose: { print("close") })
 }
-

@@ -1,6 +1,3 @@
-//
-// Copyright © Money Master Technology Co., LTD. All rights reserved.
-//
 
 import SwiftUI
 
