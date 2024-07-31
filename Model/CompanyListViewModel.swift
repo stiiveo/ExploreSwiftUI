@@ -40,29 +40,29 @@ final class CompanyListViewModel: ObservableObject {
         }
     }
     
-    func loadImage(for company: CompanyViewModel) {
-        if let cache = imageCache.retrieve(url: company.url),
-           let index = index(for: company.id, in: companies) {
-            companies[index].image = cache
-        }
-        
-        Task {
-            do {
-                if let image = try await imageLoader.load(url: company.url),
-                   let index = index(for: company.id, in: companies) {
-                    imageCache.insert(image, url: company.url)
-                    
-                    await MainActor.run { [weak self] in
-                        guard let self else { return }
-                        
-                        self.companies[index].image = image
-                    }
-                }
-            } catch {
-                print("Failed to load icon for company \(company) with error \(error)")
-            }
-        }
-    }
+//    func loadImage(for company: CompanyViewModel) {
+//        if let cache = imageCache.retrieve(url: company.url),
+//           let index = index(for: company.id, in: companies) {
+//            companies[index].image = cache
+//        }
+//        
+//        Task {
+//            do {
+//                if let image = try await imageLoader.load(url: company.url),
+//                   let index = index(for: company.id, in: companies) {
+//                    imageCache.insert(image, url: company.url)
+//                    
+//                    await MainActor.run { [weak self] in
+//                        guard let self else { return }
+//                        
+//                        self.companies[index].image = image
+//                    }
+//                }
+//            } catch {
+//                print("Failed to load icon for company \(company) with error \(error)")
+//            }
+//        }
+//    }
     
     private func index(for companyID: CompanyID, in companies: [CompanyViewModel]) -> Int? {
         return companies.firstIndex(where: { $0.id == companyID })

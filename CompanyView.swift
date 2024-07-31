@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct CompanyView: View {
+struct CompanyView<Cell: View>: View {
     
     @ObservedObject var viewModel: CompanyListViewModel
-    let imageMapper: (Data) -> Image
+    let cellView: (CompanyViewModel) -> Cell
     
     @State private var selectedCompany: CompanyViewModel?
     
@@ -12,12 +12,8 @@ struct CompanyView: View {
             CompanyListView(
                 companies: $viewModel.companies.wrappedValue,
                 cellView: { company in
-                    return CompanyCellView(
-                        image: imageMapper(company.image),
-                        title: company.name
-                    )
-                    .onAppear { viewModel.loadImage(for: company) }
-                    .onTapGesture { selectedCompany = company }
+                    cellView(company)
+                        .onTapGesture { selectedCompany = company }
                 },
                 onRefresh: viewModel.loadCompanies
             )

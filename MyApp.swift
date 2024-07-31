@@ -8,14 +8,3 @@ struct MyApp: App {
         }
     }
 }
-
-final class CompanyViewComposer {
-    private init() {}
-    
-    static func composedView() -> some View {
-        let viewModel = CompanyListViewModel(
-            companiesLoader: MockCompaniesLoader(),
-            imageLoader: LocalImageLoader())
-        return CompanyView(viewModel: viewModel, imageMapper: LocalImageMapper.map)
-    }
-}

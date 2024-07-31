@@ -1,7 +1,7 @@
 import SwiftUI
 
 protocol ImageLoader {
-    func load(url: URL) async throws -> Data?
+    func load(url: URL) async throws -> Data
 }
 
 final class InMemoryImageCache {
@@ -24,25 +24,25 @@ final class InMemoryImageCache {
 }
 
 final class LocalImageLoader: ImageLoader {
-    func load(url: URL) async throws -> Data? {
+    func load(url: URL) async throws -> Data {
         // simulate delay
         let randomDelay = Double.random(in: 0.1...1.0)
         try await Task.sleep(for: .seconds(randomDelay))
         
         guard let urlDomain = url.host(percentEncoded: false) else {
-            return nil
+            return Data()
         }
         
         let imageName = urlDomain
             .replacingOccurrences(of: "www.", with: "", options: .regularExpression)
             .replacingOccurrences(of: ".com", with: "", options: .regularExpression)
         
-        return UIImage(named: imageName)?.pngData()
+        return UIImage(named: imageName)?.pngData() ?? Data()
     }
 }
 
 struct RemoteImageLoader: ImageLoader {
-    func load(url: URL) async throws -> Data? {
+    func load(url: URL) async throws -> Data {
         let (data, _) = try await URLSession.shared.data(from: url)
         return data
     }
