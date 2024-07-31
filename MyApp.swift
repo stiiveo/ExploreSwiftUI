@@ -16,6 +16,6 @@ final class CompanyViewComposer {
         let viewModel = CompanyListViewModel(
             companiesLoader: MockCompaniesLoader(),
             imageLoader: LocalImageLoader())
-        return CompanyView(viewModel: viewModel)
+        return CompanyView(viewModel: viewModel, imageMapper: LocalImageMapper.map)
     }
 }

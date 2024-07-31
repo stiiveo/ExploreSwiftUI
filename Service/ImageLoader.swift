@@ -49,13 +49,8 @@ struct RemoteImageLoader: ImageLoader {
 }
 
 struct LocalImageMapper {
-    static func map(_ data: Data) throws -> Image {
-        
-        if let image = UIImage(data: data) {
-            return Image(uiImage: image)
-        } else {
-            throw UnmappableImageData(data)
-        }
+    static func map(_ data: Data) -> Image {
+        Image(uiImage: UIImage(data: data) ?? UIImage())
     }
 }
 

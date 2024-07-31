@@ -3,6 +3,8 @@ import SwiftUI
 struct CompanyView: View {
     
     @ObservedObject var viewModel: CompanyListViewModel
+    let imageMapper: (Data) -> Image
+    
     @State private var selectedCompany: CompanyViewModel?
     
     var body: some View {
@@ -10,8 +12,8 @@ struct CompanyView: View {
             CompanyListView(
                 companies: $viewModel.companies.wrappedValue,
                 cellView: { company in
-                    CompanyCellView(
-                        image: Image(uiImage: UIImage(data: company.image)!),
+                    return CompanyCellView(
+                        image: imageMapper(company.image),
                         title: company.name
                     )
                     .onAppear { viewModel.loadImage(for: company) }
