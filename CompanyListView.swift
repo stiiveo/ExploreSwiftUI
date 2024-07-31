@@ -1,9 +1,8 @@
 import SwiftUI
 
-struct CompanyListView: View {
+struct CompanyListView<CellView>: View where CellView: View {
     let companies: [CompanyViewModel]
-    let onTapCompany: (CompanyViewModel) -> Void
-    let onAppearCompany: (CompanyViewModel) -> Void
+    let cellView: (CompanyViewModel) -> CellView
     let onRefresh: () -> Void
     
     private let maxCellWidth = CGFloat(180)
@@ -19,7 +18,9 @@ struct CompanyListView: View {
                     alignment: .leading,
                     spacing: 12
                 ) {
-                    makeCompaniesView(companies: companies)
+                    ForEach(companies) { company in
+                        cellView(company)
+                    }
                 }
                 .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
             }.refreshable { onRefresh() }
@@ -30,17 +31,5 @@ struct CompanyListView: View {
     private func generateColumns(viewWidth: CGFloat, maxColumnWidth: CGFloat) -> [GridItem] {
         let numberOfColumns = max(1, Int(viewWidth) / Int(maxColumnWidth))
         return Array(repeating: GridItem(.flexible(), spacing: 12), count: numberOfColumns)
-    }
-    
-    @ViewBuilder
-    private func makeCompaniesView(companies: [CompanyViewModel]) -> some View {
-        ForEach(companies) { company in
-            CompanyCellView(
-                image: Image(uiImage: UIImage(data: company.image)!),
-                title: company.name
-            )
-            .onAppear { onAppearCompany(company) }
-            .onTapGesture { onTapCompany(company) }
-        }
     }
 }

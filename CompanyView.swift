@@ -9,11 +9,13 @@ struct CompanyView: View {
         ZStack {
             CompanyListView(
                 companies: $viewModel.companies.wrappedValue,
-                onTapCompany: { company in
-                    selectedCompany = company
-                },
-                onAppearCompany: { company in
-                    viewModel.loadImage(for: company)
+                cellView: { company in
+                    CompanyCellView(
+                        image: Image(uiImage: UIImage(data: company.image)!),
+                        title: company.name
+                    )
+                    .onAppear { viewModel.loadImage(for: company) }
+                    .onTapGesture { selectedCompany = company }
                 },
                 onRefresh: viewModel.loadCompanies
             )
