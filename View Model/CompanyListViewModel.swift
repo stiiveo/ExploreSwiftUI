@@ -42,5 +42,3 @@ final class CompanyListViewModel: ObservableObject {
         return companies.firstIndex(where: { $0.id == companyID })
     }
 }
-
-let buildingImage = UIImage(systemName: "building")!

@@ -3,14 +3,14 @@ import SwiftUI
 class AsyncImageViewModel: ObservableObject {
     let url: URL
     let loader: (URL) async throws -> Data
-    let mapper: (Data) -> Image
+    let mapper: (Data) throws -> Image
     
     @Published var state: State?
     
     init(
         url: URL,
         loader: @escaping (URL) async throws -> Data,
-        mapper: @escaping (Data) -> Image
+        mapper: @escaping (Data) throws -> Image
     ) {
         self.url = url
         self.loader = loader
@@ -22,7 +22,7 @@ class AsyncImageViewModel: ObservableObject {
             do {
                 updateState(.loading)
                 let imageData = try await loader(url)
-                let image = mapper(imageData)
+                let image = try mapper(imageData)
                 updateState(.loaded(image))
             } catch {
                 updateState(.failure(error))
