@@ -25,14 +25,9 @@ struct CompanyCellView: View {
     }
 }
 
-class CompanyCellViewModel {
+struct CompanyCellViewModel {
     let title: String
     let image: AsyncImageView
-    
-    init(title: String, image: AsyncImageView) {
-        self.title = title
-        self.image = image
-    }
 }
 
 struct AsyncImageView: View {
