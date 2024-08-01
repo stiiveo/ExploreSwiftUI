@@ -10,7 +10,7 @@ struct CompanyViewModelMapper {
         CompanyViewModel(
             id: company.id,
             name: company.name,
-            image: defaultIconData,
+            iconData: defaultIconData,
             url: company.url
         )
     }
