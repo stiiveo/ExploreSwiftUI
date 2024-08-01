@@ -6,7 +6,7 @@ final class CompanyViewComposer {
     
     static func composedView() -> some View {
         let viewModel = CompanyListViewModel(
-            companiesLoader: MockCompaniesLoader(),
+            companiesLoader: StubCompaniesLoader(stub: mockCompanies, delay: 0.3),
             imageLoader: LocalImageLoader())
         return CompanyView(viewModel: viewModel, cellView: { company in
             let imageViewModel = AsyncImageViewModel(
