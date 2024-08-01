@@ -1,9 +1,10 @@
 import SwiftUI
 
-struct CompanyView<Cell: View>: View {
+struct CompanyView<Cell: View, LoadingView: View>: View {
     
     @ObservedObject var viewModel: CompanyListViewModel
     let cellView: (CompanyViewModel) -> Cell
+    let loadingView: () -> LoadingView
     
     @State private var selectedCompany: CompanyViewModel?
     
@@ -24,9 +25,7 @@ struct CompanyView<Cell: View>: View {
                     onTapClose: { selectedCompany = nil })
             }
             
-            if viewModel.isLoadingCompanies {
-                ProgressView("Loading Companies")
-            }
+            if viewModel.isLoadingCompanies { loadingView() }
         }
         .task {
             viewModel.loadCompanies()
