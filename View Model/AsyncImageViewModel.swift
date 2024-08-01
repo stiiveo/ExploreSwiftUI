@@ -5,7 +5,7 @@ class AsyncImageViewModel: ObservableObject {
     let loader: (URL) async throws -> Data
     let mapper: (Data) throws -> Image
     
-    @Published var state: State?
+    @Published private(set) var state: State?
     
     init(
         url: URL,
