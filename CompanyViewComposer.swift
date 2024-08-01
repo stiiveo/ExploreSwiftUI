@@ -7,11 +7,11 @@ final class CompanyViewComposer {
     static func composedView() -> some View {
         let viewModel = CompanyListViewModel(
             companiesLoader: StubCompaniesLoader(stub: mockCompanies, delay: 0.3),
-            imageLoader: LocalImageLoader())
+            imageLoader: AssetImageLoader(delayRange: 0.1...0.5))
         return CompanyView(viewModel: viewModel, cellView: { company in
             let imageViewModel = AsyncImageViewModel(
                 url: company.url,
-                loader: LocalImageLoader().load,
+                loader: AssetImageLoader(delayRange: 0.1...0.5).load,
                 mapper: LocalImageMapper.map
             )
             return CompanyCellView(

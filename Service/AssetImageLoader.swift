@@ -1,10 +1,15 @@
 import UIKit
 
-final class LocalImageLoader: ImageLoader {
+final class AssetImageLoader: ImageLoader {
+    private let delayRange: ClosedRange<TimeInterval>
+    
+    init(delayRange: ClosedRange<TimeInterval>) {
+        self.delayRange = delayRange
+    }
+    
     func load(url: URL) async throws -> Data {
-        // simulate delay
-        let randomDelay = Double.random(in: 0.1...1.0)
-        try await Task.sleep(for: .seconds(randomDelay))
+        let delay = Double.random(in: delayRange)
+        try await Task.sleep(for: .seconds(delay))
         
         guard let urlDomain = url.host(percentEncoded: false) else {
             return Data()
