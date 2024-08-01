@@ -33,7 +33,7 @@ class AsyncImageViewModel: ObservableObject {
     private func updateState(_ state: State) {
         Task {
             await MainActor.run {
-                self.state = state
+                withAnimation { self.state = state }
             }
         }
     }
