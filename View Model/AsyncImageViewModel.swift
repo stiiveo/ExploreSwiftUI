@@ -31,10 +31,8 @@ class AsyncImageViewModel: ObservableObject {
     }
     
     private func updateState(_ state: State) {
-        if Thread.isMainThread {
-            self.state = state
-        } else {
-            DispatchQueue.main.async {
+        Task {
+            await MainActor.run {
                 self.state = state
             }
         }
