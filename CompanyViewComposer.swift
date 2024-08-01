@@ -20,10 +20,7 @@ final class CompanyViewComposer {
             return CompanyCellView(
                 viewModel: CompanyCellViewModel(
                     title: company.name,
-                    image: AsyncImageView(
-                        viewModel: imageViewModel
-                    )
-                )
+                    image: AsyncImageView(viewModel: imageViewModel))
             ).onAppear(perform: imageViewModel.load)
         })
     }
