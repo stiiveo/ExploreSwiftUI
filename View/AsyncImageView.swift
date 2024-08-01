@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AsyncImageView: View {
-    @ObservedObject var viewModel: AsyncImageViewModel
+    @StateObject var viewModel: AsyncImageViewModel
     
     var body: some View {
         switch viewModel.state {
