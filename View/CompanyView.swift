@@ -15,6 +15,7 @@ struct CompanyView<Cell: View, LoadingView: View>: View {
                 cellView: { company in
                     cellView(company)
                         .onTapGesture { selectedCompany = company }
+                        .disabled(isInteractionDisabled)
                 },
                 onRefresh: viewModel.loadCompanies
             )
@@ -30,5 +31,9 @@ struct CompanyView<Cell: View, LoadingView: View>: View {
         .task {
             viewModel.loadCompanies()
         }
+    }
+    
+    private var isInteractionDisabled: Bool {
+        viewModel.isLoadingCompanies
     }
 }
