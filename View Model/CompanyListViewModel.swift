@@ -7,14 +7,9 @@ final class CompanyListViewModel: ObservableObject {
     @Published var companies = [CompanyViewModel]()
     
     let companiesLoader: CompaniesLoader
-    let imageLoader: ImageLoader
     
-    init(
-        companiesLoader: CompaniesLoader,
-        imageLoader: ImageLoader
-    ) {
+    init(companiesLoader: CompaniesLoader) {
         self.companiesLoader = companiesLoader
-        self.imageLoader = imageLoader
     }
     
     func loadCompanies() {
@@ -36,9 +31,5 @@ final class CompanyListViewModel: ObservableObject {
                 print("Failed to load companies with error \(error)")
             }
         }
-    }
-    
-    private func index(for companyID: CompanyID, in companies: [CompanyViewModel]) -> Int? {
-        return companies.firstIndex(where: { $0.id == companyID })
     }
 }
