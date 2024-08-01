@@ -36,8 +36,17 @@ struct LoadingView: View {
     }
     
     var body: some View {
-        ProgressView(message ?? "")
+        progressView
             .padding(.all, 24)
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+    }
+    
+    @ViewBuilder
+    private var progressView: some View {
+        if let message, !message.isEmpty {
+            ProgressView(message)
+        } else {
+            ProgressView()
+        }
     }
 }
