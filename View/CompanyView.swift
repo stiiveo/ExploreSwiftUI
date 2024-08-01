@@ -10,7 +10,7 @@ struct CompanyView<Cell: View>: View {
     var body: some View {
         ZStack {
             CompanyListView(
-                companies: $viewModel.companies.wrappedValue,
+                companies: viewModel.companies,
                 cellView: { company in
                     cellView(company)
                         .onTapGesture { selectedCompany = company }

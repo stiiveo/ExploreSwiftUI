@@ -3,8 +3,8 @@ import SwiftUI
 
 final class CompanyListViewModel: ObservableObject {
     
-    @Published var isLoadingCompanies = false
-    @Published var companies = [CompanyViewModel]()
+    @Published private(set) var isLoadingCompanies = false
+    @Published private(set)var companies = [CompanyViewModel]()
     
     let companiesLoader: CompaniesLoader
     
