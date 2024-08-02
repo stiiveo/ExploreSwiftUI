@@ -3,10 +3,10 @@ import SwiftUI
 struct CompanyView<Cell: View, LoadingView: View>: View {
     
     @ObservedObject var viewModel: CompanyListViewModel
-    let cellView: (CompanyViewModel) -> Cell
+    let cellView: (Company) -> Cell
     let loadingView: () -> LoadingView
     
-    @State private var selectedCompany: CompanyViewModel?
+    @State private var selectedCompany: Company?
     
     var body: some View {
         ZStack {

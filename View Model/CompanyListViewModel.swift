@@ -4,7 +4,7 @@ import SwiftUI
 final class CompanyListViewModel: ObservableObject {
     
     @Published private(set) var isLoadingCompanies = false
-    @Published private(set)var companies = [CompanyViewModel]()
+    @Published private(set)var companies = [Company]()
     
     let companiesLoader: CompaniesLoader
     
@@ -24,7 +24,7 @@ final class CompanyListViewModel: ObservableObject {
                 await MainActor.run { [weak self] in
                     guard let self else { return }
                     
-                    self.companies = companies.map { CompanyViewModelMapper.map($0) }
+                    self.companies = companies
                     self.isLoadingCompanies = false
                 }
             } catch {

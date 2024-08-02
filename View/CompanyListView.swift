@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct CompanyListView<Cell: View>: View {
-    let companies: [CompanyViewModel]
-    let cellView: (CompanyViewModel) -> Cell
+    let companies: [Company]
+    let cellView: (Company) -> Cell
     let onRefresh: () -> Void
     
     private let maxCellWidth = CGFloat(180)
