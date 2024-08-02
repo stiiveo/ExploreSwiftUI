@@ -4,8 +4,9 @@ import SwiftUI
 final class CompanyViewComposer {
     private init() {}
     
+    @MainActor
     static func composedView() -> some View {
-        let companiesLoader = StubCompaniesLoader(stub: mockCompanies, delay: 3)
+        let companiesLoader = StubCompaniesLoader(stub: mockCompanies, delay: 1)
         let viewModel = CompanyListViewModel(companiesLoader: companiesLoader)
         let imageLoader = AssetImageLoader(delayRange: 0.1...0.5)
         

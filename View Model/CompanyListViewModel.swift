@@ -1,10 +1,11 @@
 
 import SwiftUI
 
+@MainActor
 final class CompanyListViewModel: ObservableObject {
     
     @Published private(set) var isLoadingCompanies = false
-    @Published private(set)var companies = [Company]()
+    @Published private(set) var companies = [Company]()
     
     let companiesLoader: CompaniesLoader
     
@@ -15,18 +16,9 @@ final class CompanyListViewModel: ObservableObject {
     func loadCompanies() {
         Task {
             do {
-                await MainActor.run { [weak self] in
-                    self?.isLoadingCompanies = true
-                }
-                
-                let companies = try await self.companiesLoader.load()
-                
-                await MainActor.run { [weak self] in
-                    guard let self else { return }
-                    
-                    self.companies = companies
-                    self.isLoadingCompanies = false
-                }
+                isLoadingCompanies = true
+                companies = try await self.companiesLoader.load()
+                isLoadingCompanies = false
             } catch {
                 print("Failed to load companies with error \(error)")
             }
