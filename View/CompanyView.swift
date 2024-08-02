@@ -17,7 +17,7 @@ struct CompanyView<Cell: View, LoadingView: View>: View {
                         .onTapGesture { selectedCompany = company }
                         .disabled(isInteractionDisabled)
                 },
-                onRefresh: viewModel.loadCompanies
+                onRefresh: viewModel.load
             )
             .sheet(item: $selectedCompany) { company in
                 NavigationWrappedWebView(
@@ -29,7 +29,7 @@ struct CompanyView<Cell: View, LoadingView: View>: View {
             if viewModel.isLoadingCompanies { loadingView() }
         }
         .task {
-            viewModel.loadCompanies()
+            viewModel.load()
         }
     }
     

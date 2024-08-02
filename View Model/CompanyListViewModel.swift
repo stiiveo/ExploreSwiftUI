@@ -13,7 +13,7 @@ final class CompanyListViewModel: ObservableObject {
         self.companiesLoader = companiesLoader
     }
     
-    func loadCompanies() {
+    func load() {
         Task {
             do {
                 isLoadingCompanies = true
