@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 class AsyncImageViewModel: ObservableObject {
     let url: URL
     let loader: (URL) async throws -> Data
@@ -20,20 +21,12 @@ class AsyncImageViewModel: ObservableObject {
     func load() {
         Task {
             do {
-                updateState(.loading)
+                state = .loading
                 let imageData = try await loader(url)
                 let image = try mapper(imageData)
-                updateState(.loaded(image))
+                state = .loaded(image)
             } catch {
-                updateState(.failure(error))
-            }
-        }
-    }
-    
-    private func updateState(_ state: State) {
-        Task {
-            await MainActor.run {
-                withAnimation { self.state = state }
+                state = .failure(error)
             }
         }
     }
